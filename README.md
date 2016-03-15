@@ -39,13 +39,14 @@ To verify that the service is running type in:
 
     initctl status tomcat
 
-To see the start up page in your browswer type in:
+To see the start up page in your browser type in:
 
     ifconfig
 
 The output next to eth1 - inet addr: xxx.xx.x.xxx is the server ip address.
 
-In your web browswer type in:
+In your web browser type in:
+
 	xxx.xx.x.xxx:8080
 
 Unlocked Features
@@ -55,3 +56,16 @@ Synced Folders and Vagrant Share have both been disabled by default.
 
 In the Vagrantfile uncomment out the bottom of the file to enable.
 
+To Stop the FDM Tracker Development Environment
+-------
+
+Simply type in:
+
+    vagrant halt
+
+To Delete the FDM Tracker Development Environment
+-------
+
+Simply type in:
+
+    vagrant destroy
