@@ -17,6 +17,11 @@ sudo chmod g+rwx conf
 sudo chmod g+r conf/*
 sudo chown -R tomcat work/ temp/ logs/
 
+#Get and Install Oracle Database Drivers
+sudo chmod 777 /opt/tomcat/lib/
+wget http://www.webdreams.co/ojdbc7.jar
+sudo mv ojdbc7.jar /opt/tomcat/lib/
+
 #Initialize Tomcat Server on Start
 sudo chmod 777 /etc/init
 wget http://www.webdreams.co/tomcat.conf
